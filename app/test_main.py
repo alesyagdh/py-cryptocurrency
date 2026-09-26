@@ -7,7 +7,7 @@ from unittest.mock import MagicMock, patch
 def test_cryptocurrency_action_buy(mock_prediction: MagicMock) -> None:
     mock_prediction.return_value = 106
 
-    assert cryptocurrency_action(100) == "Buy more cryptocurrency"
+    assert cryptocurrency_action(100) == "Buy more cryptocurency"
 
 
 @patch("app.main.get_exchange_rate_prediction")
